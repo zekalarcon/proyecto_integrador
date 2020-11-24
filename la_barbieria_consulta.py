@@ -13,6 +13,7 @@ def la_barbieria_consulta():
         while True:
             total_dia = []
             total_dias = []
+            tintura_resta = []
             
             
             print(
@@ -69,7 +70,10 @@ def la_barbieria_consulta():
 
 
             if opcion == 4:
-                pass            
+                opcion = input('Ingrese producto para saber stock:\n')
+                for i in range(len_reader):
+                    pass
+
 
 
 

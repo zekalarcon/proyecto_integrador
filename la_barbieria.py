@@ -138,7 +138,7 @@ def la_barbieria():
                                             'PRECIO':precio,'FECHA':datetime.date.today()}) 
 
                     
-                    if opcion == 4:
+                    if operacion == 4:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         tintura_numero_uno = input('Ingrese numero de tintura (EJ: 7 o 9.2):\n')
@@ -179,7 +179,7 @@ def la_barbieria():
                                             'CANT_REFLEJO_3':cantidad_reflejo_tres,'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 5:
+                    if operacion == 5:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         reflejo_uno = input('Ingrese el numero del primer reflejo (EJ: 3):\n')
@@ -201,7 +201,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 6:
+                    if operacion == 6:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_queratina = input('Ingrese cantidad de queratina a utilizar:\n')
@@ -211,7 +211,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 7:
+                    if operacion == 7:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_alisado = input('Ingrese cantidad de alisado a utilizar:\n')
@@ -221,7 +221,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 8:
+                    if operacion == 8:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_plastificado = input('Ingrese cantidad de plastificado a utilizar:\n')
@@ -231,7 +231,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 9:
+                    if operacion == 9:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_biomolecular = input('Ingrese cantidad de biomolecular a utilizar:\n')
@@ -241,7 +241,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 10:
+                    if operacion == 10:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_argan = input('Ingrese cantidad de argan a utilizar:\n')
@@ -251,7 +251,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 11:
+                    if operacion == 11:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_espejo = input('Ingrese cantidad de espejo a utilizar:\n')
@@ -261,7 +261,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 12:
+                    if operacion == 12:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_biotina = input('Ingrese cantidad de biotina a utilizar:\n')
@@ -271,7 +271,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 13:
+                    if operacion == 13:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_botox = input('Ingrese cantidad de botox a utilizar:\n')
@@ -281,7 +281,7 @@ def la_barbieria():
                                         'PRECIO':precio,'FECHA':datetime.date.today()})
                     
                     
-                    if opcion == 14:
+                    if operacion == 14:
                         nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
                         telefono_cliente = input('Ingrese telefono del cliente:\n')
                         cantidad_lifting = input('Ingrese cantidad de lifting a utilizar:\n')
