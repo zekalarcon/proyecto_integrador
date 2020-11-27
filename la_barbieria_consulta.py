@@ -8,9 +8,20 @@ def la_barbieria_consulta():
         reader = list(csv.DictReader(fi))
         len_reader = len(reader)
 
+        print('Bienvenido!\n')
+
         while True:
-            total_dia = []
-            total_dias = []
+            print(
+                '                   *****************************************************************************************************\n'
+                '                   **                                                                                                 **\n'
+                '                   **      $$        $$$         $$$$$     $$$    $$$$$   $$$$$   $$  $$$$$  $$$$$   $$    $$$        **\n'
+                '                   **      $$      $$   $$       $$  $$  $$   $$  $$  $$  $$  $$  $$  $$     $$  $$  $$  $$   $$      **\n'
+                '                   **      $$      $$$$$$$       $$$$$   $$$$$$$  $$$$$   $$$$$   $$  $$$$   $$$$$   $$  $$$$$$$      **\n'
+                '                   **      $$      $$   $$       $$  $$  $$   $$  $$  $$  $$  $$  $$  $$     $$  $$  $$  $$   $$      **\n'
+                '                   **      $$$$$$                $$$$$                    $$$$$       $$$$$                           **\n'
+                '                   **                                                                                                 **\n'
+                '                   *****************************************************************************************************                                                                                    '
+            )
             stock_suma = []
 
             print(
@@ -52,17 +63,18 @@ def la_barbieria_consulta():
                     precio = row.get('PRECIO')
 
                     if str(datetime.date.today()) == fecha:
-                        total_dia.append(int(precio))
+                        stock_suma.append(precio)
+                total_dia = remover(stock_suma)
 
-                print(f'El total del dia es: ${sum(total_dia)}')
+                print(f'El total del dia es: ${total_dia}')
 
             if opcion == 2:
                 for i in range(len_reader):
                     row = reader[i]
                     precio = row.get('PRECIO')
-                    total_dias.append(int(precio))
-
-                print(f'El total de todos los dia es: ${sum(total_dias)}')
+                    stock_suma.append(precio)
+                total_dias = remover(stock_suma)
+                print(f'El total de todos los dia es: ${total_dias}')
 
             if opcion == 3:
 
@@ -81,7 +93,7 @@ def la_barbieria_consulta():
 
             if opcion == 4:
 
-                opcion = input('Ingrese tintura numero (EJ: TINTURA 2.3):\n')
+                opcion = input('Ingrese tintura numero (EJ: TINTURA 2.3):\n').upper()
                 suma_producto_stock = stock_cantidad(opcion)
 
                 for i in range(len_reader):
