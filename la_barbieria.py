@@ -107,9 +107,7 @@ def la_barbieria():
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
                         tintura_numero_uno = input('Ingrese numero de tintura (EJ: TINTURA 7 o TINTURA 9.2):\n')
                         cantidad_tintura_uno = input('Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
-                        oxigenada_volumen = input('Ingrese oxigenada volumen (EJ: OXIGENADA 30):\n')
-                        cantidad_oxigenada = input('Ingrese cantidad de agua oxigenada a utilizar (EJ: 150):\n')
-                        cantidad_polvo = input('Ingrese cantidad de polvo decolorante a utilizar (EJ: 100):\n')
+                        oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         hacer_reflejo = input('Desea utilizar reflejos? Ingrese SI o NO:\n').upper()
                         if hacer_reflejo == 'NO':
                             writer.writerow({'PELUQUERIA_OPERACION':'TINTURA','NOMBRE_CLIENTE':nombre_cliente.upper(),
@@ -136,9 +134,7 @@ def la_barbieria():
                         cantidad_tintura_dos = input('Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
                         tintura_numero_tres = input('Ingrese numero de tercera tintura a utilizar (EJ: TINTURA 7 o TINTURA 9.2):\n')
                         cantidad_tintura_tres = input('Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
-                        oxigenada_volumen = input('Ingrese el numero de volumen del agua oxigena (EJ: OXIGENADA 30):\n')
-                        cantidad_oxigenada = input('Ingrese cantidad de agua oxigenada a utilizar (EJ: 150):\n')
-                        cantidad_polvo = input('Ingrese cantidad de polvo decolorante a utilizar (EJ: 100):\n')
+                        oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         hacer_reflejo = input('Desea utilizar reflejos? Ingrese SI o NO:\n').upper()
                         if hacer_reflejo == 'NO':
                             writer.writerow({'PELUQUERIA_OPERACION':'BALAYAGE','NOMBRE_CLIENTE':nombre_cliente.upper(),
@@ -164,9 +160,7 @@ def la_barbieria():
                     if operacion == 5:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
                         reflejo_uno, cantidad_reflejo_uno, reflejo_dos, cantidad_reflejo_dos, reflejo_tres, cantidad_reflejo_tres = reflejo()
-                        oxigenada_volumen = input('Ingrese el numero de volumen del agua oxigena (EJ: OXIGENADA 30):\n')
-                        cantidad_oxigenada = input('Ingrese cantidad de agua oxigenada a utilizar (EJ: 150):\n')
-                        cantidad_polvo = input('Ingrese cantidad de polvo decolorante a utilizar (EJ: 100):\n')
+                        oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         writer.writerow({'PELUQUERIA_OPERACION':'REFLEJOS','NOMBRE_CLIENTE':nombre_cliente.upper(),
                                         'TELEFONO_CLIENTE':telefono_cliente,'REFLEJO_1':reflejo_uno.upper(),
                                         'CANT_REFLEJO_1':cantidad_reflejo_uno,'REFLEJO_2':reflejo_dos.upper(),
@@ -284,6 +278,12 @@ def reflejo():
     return reflejo_uno, cantidad_reflejo_uno, reflejo_dos, cantidad_reflejo_dos, reflejo_tres, cantidad_reflejo_tres    
 
 
+def adicionales():
+    oxigenada_volumen = input('Ingrese oxigenada volumen (EJ: OXIGENADA 30):\n')
+    cantidad_oxigenada = input('Ingrese cantidad de agua oxigenada a utilizar (EJ: 150):\n')
+    cantidad_polvo = input('Ingrese cantidad de polvo decolorante a utilizar (EJ: 100):\n')
+
+    return oxigenada_volumen, cantidad_oxigenada, cantidad_polvo
 
 
 if __name__ == '__main__':
