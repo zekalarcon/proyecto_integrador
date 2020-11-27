@@ -94,8 +94,8 @@ def la_barbieria():
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
                         tintura_numero_uno = input(
                             'Ingrese numero de tintura (EJ: TINTURA 7 o TINTURA 9.2):\n')
-                        cantidad_tintura_uno = input(
-                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
+                        cantidad_tintura_uno = int(input(
+                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n'))
                         oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         hacer_reflejo = input(
                             'Desea utilizar reflejos? Ingrese SI o NO:\n').upper()
@@ -119,16 +119,16 @@ def la_barbieria():
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
                         tintura_numero_uno = input(
                             'Ingrese numero de tintura (EJ: TINTURA 7 o TINTURA 9.2):\n')
-                        cantidad_tintura_uno = input(
-                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
+                        cantidad_tintura_uno = int(input(
+                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n'))
                         tintura_numero_dos = input(
                             'Ingrese numero de segunda tintura a utilizar (EJ: TINTURA 7 o TINTURA 9.2):\n')
-                        cantidad_tintura_dos = input(
-                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
+                        cantidad_tintura_dos = int(input(
+                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n'))
                         tintura_numero_tres = input(
                             'Ingrese numero de tercera tintura a utilizar (EJ: TINTURA 7 o TINTURA 9.2):\n')
-                        cantidad_tintura_tres = input(
-                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n')
+                        cantidad_tintura_tres = int(input(
+                            'Ingrese cantidad de tintura a utilizar (EJ: 45):\n'))
                         oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         hacer_reflejo = input(
                             'Desea utilizar reflejos? Ingrese SI o NO:\n').upper()
@@ -166,72 +166,72 @@ def la_barbieria():
 
                     if operacion == 6:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_queratina = input(
-                            'Ingrese cantidad de queratina a utilizar (EJ: 100):\n')
+                        cantidad_queratina = int(input(
+                            'Ingrese cantidad de queratina a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'QUERATINA', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_QUERATINA': cantidad_queratina,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 7:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_alisado = input(
-                            'Ingrese cantidad de alisado a utilizar (EJ: 100):\n')
+                        cantidad_alisado = int(input(
+                            'Ingrese cantidad de alisado a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_ALISADO': cantidad_alisado,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 8:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_plastificado = input(
-                            'Ingrese cantidad de plastificado a utilizar (EJ: 100):\n')
+                        cantidad_plastificado = int(input(
+                            'Ingrese cantidad de plastificado a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'PLASTIFICADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_PLASTIFICADO': cantidad_plastificado,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 9:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_biomolecular = input(
-                            'Ingrese cantidad de biomolecular a utilizar (EJ: 100):\n')
+                        cantidad_biomolecular = int(input(
+                            'Ingrese cantidad de biomolecular a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_BIOMOLECULAR': cantidad_biomolecular,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 10:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_argan = input(
-                            'Ingrese cantidad de argan a utilizar (EJ: 100):\n')
+                        cantidad_argan = int(input(
+                            'Ingrese cantidad de argan a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_ARGAN': cantidad_argan,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 11:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_espejo = input(
-                            'Ingrese cantidad de espejo a utilizar (EJ: 100):\n')
+                        cantidad_espejo = int(input(
+                            'Ingrese cantidad de espejo a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_ESPEJO': cantidad_espejo,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 12:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_biotina = input(
-                            'Ingrese cantidad de biotina a utilizar (EJ: 100):\n')
+                        cantidad_biotina = int(input(
+                            'Ingrese cantidad de biotina a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_BIOTINA': cantidad_biotina,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 13:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_botox = input(
-                            'Ingrese cantidad de botox a utilizar (EJ: 100):\n')
+                        cantidad_botox = int(input(
+                            'Ingrese cantidad de botox a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_BOTOX': cantidad_botox,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
 
                     if operacion == 14:
                         nombre_cliente, telefono_cliente, precio = datos_cliente()
-                        cantidad_lifting = input(
-                            'Ingrese cantidad de lifting a utilizar (EJ: 100):\n')
+                        cantidad_lifting = int(input(
+                            'Ingrese cantidad de lifting a utilizar (EJ: 100):\n'))
                         writer.writerow({'PELUQUERIA_OPERACION': 'ALISADO', 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                          'TELEFONO_CLIENTE': telefono_cliente, 'CANT_LIFTING': cantidad_lifting,
                                          'PRECIO': precio, 'FECHA': datetime.date.today()})
@@ -242,7 +242,7 @@ def la_barbieria():
                         'Ingrese producto a stockear (EJ: TINTURA 9.1, ) o FIN para terminar:\n')
                     if producto_stock == 'FIN':
                         break
-                    cantidad_stock = input('Ingrese cantidad (EJ: 100):\n')
+                    cantidad_stock = int(input('Ingrese cantidad (EJ: 100):\n'))
 
                     try:
                         precio_stock = int(
@@ -255,9 +255,9 @@ def la_barbieria():
 
 
 def datos_cliente():
-    nombre_cliente = input('Ingrese nombre y apellido del cliente:\n')
-    telefono_cliente = input('Ingrese telefono del cliente:\n')
-    precio = input('Ingrese importe:\n')
+    nombre_cliente = input('Ingrese nombre y apellido del cliente (EJ: JUAN PEREZ):\n')
+    telefono_cliente = int(input('Ingrese telefono del cliente (EJ: 223456789):\n'))
+    precio = int(input('Ingrese importe:\n'))
 
     return nombre_cliente, telefono_cliente, precio
 
@@ -265,16 +265,16 @@ def datos_cliente():
 def reflejo():
     reflejo_uno = input(
         'Ingrese el numero del primer reflejo (EJ: REFLEJO 3):\n')
-    cantidad_reflejo_uno = input(
-        'Ingrese cantidad de reflejo a utilizar (EJ: 20):\n')
+    cantidad_reflejo_uno = int(input(
+        'Ingrese cantidad de reflejo a utilizar (EJ: 20):\n'))
     reflejo_dos = input(
         'Ingrese el numero del segundo reflejo (EJ: REFLEJO 3):\n')
-    cantidad_reflejo_dos = input(
-        'Ingrese cantidad de reflejo a utilizar (EJ: 20):\n')
+    cantidad_reflejo_dos = int(input(
+        'Ingrese cantidad de reflejo a utilizar (EJ: 20):\n'))
     reflejo_tres = input(
         'Ingrese el numero del tercer reflejo (EJ: REFLEJO 3):\n')
-    cantidad_reflejo_tres = input(
-        'Ingrese cantidad de reflejo a utilizar (EJ: 20):\n')
+    cantidad_reflejo_tres = int(input(
+        'Ingrese cantidad de reflejo a utilizar (EJ: 20):\n'))
 
     return reflejo_uno, cantidad_reflejo_uno, reflejo_dos, cantidad_reflejo_dos, reflejo_tres, cantidad_reflejo_tres
 
@@ -282,10 +282,10 @@ def reflejo():
 def adicionales():
     oxigenada_volumen = input(
         'Ingrese oxigenada volumen (EJ: OXIGENADA 30):\n')
-    cantidad_oxigenada = input(
-        'Ingrese cantidad de agua oxigenada a utilizar (EJ: 150):\n')
-    cantidad_polvo = input(
-        'Ingrese cantidad de polvo decolorante a utilizar (EJ: 100):\n')
+    cantidad_oxigenada = int(input(
+        'Ingrese cantidad de agua oxigenada a utilizar (EJ: 150):\n'))
+    cantidad_polvo = int(input(
+        'Ingrese cantidad de polvo decolorante a utilizar (EJ: 100):\n'))
 
     return oxigenada_volumen, cantidad_oxigenada, cantidad_polvo
 
