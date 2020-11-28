@@ -22,27 +22,19 @@ def la_barbieria_consulta():
                 '                   **                                                                                                 **\n'
                 '                   *****************************************************************************************************                                                                                    '
             )
+            
             stock_suma = []
 
-            print(
-                '1- Total dia\n'
-                '2- Total de todos los dias\n'
-                '3- Historial cliente\n'
-                '4- Stock tinturas\n'
-                '5- Stock reflejos\n'
-                '6- Stock agua oxigenada\n'
-                '7- Stock polvo decolorante\n'
-                '8- Stock queratina\n'
-                '9- Stock alisado\n'
-                '10- Stock plastificado\n'
-                '11- Stock biomolecular\n'
-                '12- Stock argan\n'
-                '13- Stock espejo\n'
-                '14- Stock biotina\n'
-                '15- Stock botox\n'
-                '16- Stock lifting\n'
-                '17- Salir programa\n'
-            )
+            opciones = ['Total dia','Total todos los dias','Historial cliente','Stock tinturas','Stock reflejos',
+                        'Stock agua oxigenada','Stock polvo decolorante','Stock queratina','Stock alisado',
+                        'Stock plastificado','Stock biomolecular','Stock argan','Stock espejo','Stock biotina',
+                        'Stock botox','Stock lifting','Salir programa']
+
+            
+            for i in opciones:
+                index = opciones.index(i)
+                print(index + 1 ,'-', i)            
+
 
             try:
                 opcion = int(input('Ingrese opcion para continuar:\n'))
