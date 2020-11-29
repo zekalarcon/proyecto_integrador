@@ -1,3 +1,17 @@
+'''
+Proyecto Integrador
+
+La Barbieria
+
+Descripcion:
+Programa para registar transacciones y stock de la peluqueria
+'''
+
+
+__author__ = "Ezequiel Alarcon"
+__email__ = "zekalarcon@gamil.com"
+
+
 import csv
 import datetime
 
