@@ -103,9 +103,6 @@ def la_barbieria():
                         oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         hacer_reflejo = input(
                             'Desea utilizar reflejos? Ingrese SI o NO:\n').upper()
-                        if hacer_reflejo != 'SI' or hacer_reflejo != 'NO':
-                            print('Incorrecto! Debe ingresar SI o NO')
-                            continue
                         if hacer_reflejo == 'NO':
                             writer.writerow({'PELUQUERIA_OPERACION': opciones[2], 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                              'TELEFONO_CLIENTE': telefono_cliente, 'TINTURA_1': tintura_numero_uno.upper(),
@@ -129,9 +126,6 @@ def la_barbieria():
                         oxigenada_volumen, cantidad_oxigenada, cantidad_polvo = adicionales()
                         hacer_reflejo = input(
                             'Desea utilizar reflejos? Ingrese SI o NO:\n').upper()
-                        if hacer_reflejo != 'SI' or hacer_reflejo != 'NO':
-                            print('Incorrecto! Debe ingresar SI o NO')
-                            continue
                         if hacer_reflejo == 'NO':
                             writer.writerow({'PELUQUERIA_OPERACION': opciones[3], 'NOMBRE_CLIENTE': nombre_cliente.upper(),
                                              'TELEFONO_CLIENTE': telefono_cliente, 'TINTURA_1': tintura_numero_uno.upper(),

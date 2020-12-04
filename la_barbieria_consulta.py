@@ -292,6 +292,7 @@ def la_barbieria_consulta():
                     f'La cantidad de lifting en stock es: {suma_producto_stock - lifting_suma} grs.')
 
 
+
 def stock_cantidad(opcion):
     with open('barbieria.csv', 'r') as fi:
         reader = list(csv.DictReader(fi))

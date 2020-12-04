@@ -10,7 +10,7 @@ El primero es para ingresar todas las operaciones realizadas en la peluqueria, '
 -Elija opcion
 -Ingrese datos
 
-El segundo es para consultar, cuanto se vendio en el dia, cuanto se vendio desde el principio, 
+El segundo es para consultar, cuanto se vendio en el dia, cuanto es el total de todas las ventas, 
 historial cliente, y saber que cantidad en stock hay de los productos anteriormente ingresados menos los utilizados en la operaciones. 
 
 -Inicie programa
